@@ -1,0 +1,60 @@
+The next day...
+*page_break Incoming Message
+*label fourthemail
+From: Maya Das, CEO, Quantum Alchemy
+*line_break
+To: Ms Merriweather
+*line_break
+Sent: 31st October 2419, 09:00
+*line_break
+Subject: CONFIDENTIAL: Secondary Offering
+*line_break
+Attached: Stock Order
+*line_break
+*line_break
+Dear Ms Merriweather
+*line_break
+*line_break
+Following the unanimous decision of shareholders to proceed with development of Auruminator QA-2, please find attached the stock order form for the dilutionary secondary offering.
+*line_break
+*line_break
+Yours forever
+*line_break
+*line_break
+Maya Das
+*line_break
+CEO, Quantum Alchemy
+*page_break Open attachment
+*temp nushares 0
+*label reorder
+You have ${savings} Universal Earth Credits
+*line_break
+You have ${shares} shares in Quantum Alchemy
+*If nushares>9
+	*line_break
+	You can buy no more shares at this time
+	*set maxshares shares
+	*set maxinvested invested
+	*finish Continue
+*line_break
+Cost per share: 100UEC
+*choice
+	#I would like to buy 1 shares at a cost of 100 UEC per share for a total of 100 UEC.
+		*set shares + 1
+		*set nushares + 1
+		*set savings - 100
+		*set invested + 100
+		*goto reorder
+	*If nushares<6
+		#I would like to buy 5 shares at a cost of 100 UEC per share for a total of 500 UEC.
+			*set shares + 5
+			*set invested + 500
+			*set savings - 500
+			*set nushares + 5
+			*goto reorder
+	#I do not want to buy any more shares
+		*set maxshares shares
+		*set maxinvested invested
+		*finish continue	
+	#Re-read message
+		*goto fourthEmail

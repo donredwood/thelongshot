@@ -1,0 +1,51 @@
+﻿Two months later...
+*page_break Incoming Message
+*label seventhemail
+From: Keith Gupta, Senior Partner, Gupta & Gupta
+*line_break
+To: Ms Merriweather
+*line_break
+Sent: 22nd March 2422, 10:00
+*line_break
+Subject: Success!
+*line_break
+Attached: Payout
+*line_break
+*line_break
+Dear Ms Merriweather
+*line_break
+*line_break
+Success is ours!
+*line_break
+*line_break
+They took us for fools! Well more fool them.
+*line_break
+*line_break
+Zhao & Jackson were too smart for their own good. They hit us with a sledgehammer when all they needed was to state their client's case with conviction.
+*line_break
+*line_break
+Our case was a long shot. What jury was ever going to find a company at fault for not publicizing a top secret, technologically sensitive development such as the QA-2?
+*line_break
+*line_break
+But with so much at stake, we knew Z&J wouldn't be able to resist their dirty tricks. Quantum Alchemy tarnished themselves by association, and what jury is going to side with a company who saw fit to manipulate them so?
+*line_break
+*line_break
+Please find attached your spoils of this oh-so-satisfying war. You may choose to receive it in UEC, or stock options - as if you are foolhardy enough to indulge these charlatans a moment longer!
+*line_break
+*line_break
+Yours sincerely
+*line_break
+*line_break
+Keith Gupta
+*line_break
+Senior Partner, Gupta & Gupta
+*page_break Open attachment
+*set maxinvested shares*2
+The settlement is equal to your total investment in Quantum Alchemy prior to their misconduct in court. For you this equates to ${shares} shares or ${maxinvested} UEC.
+*choice
+	#I would like to receive shares as compensation
+		*set shares (shares*2)
+		*finish
+	#I would like to receive UEC as compensation
+		*set savings (savings+maxinvested)
+		*finish

@@ -1,0 +1,88 @@
+﻿Two months later...
+*page_break Incoming Message
+*label sixthemail
+From: Kim S Zhao, Partner-In-Charge, Zhao & Jackson
+*line_break
+To: Ms Merriweather
+*line_break
+Sent: 24th January 2420, 08:00
+*line_break
+Subject: Proposed Lawsuit
+*line_break
+Attached: Claimant Details
+*line_break
+*line_break
+Dear Ms Merriweather
+*line_break
+*line_break
+Please, forgive the spampiercer but this is important.
+*line_break
+*line_break
+I have reason to believe you were recently contacted by a company called Quantum Alchemy. I have deduced this from public archives of the original Milky Way Merge scandal some 300 years ago.
+*line_break
+*line_break
+You would not have been alone in deciding to invest in this company, and if you did, you will no doubt have been alarmed by the recent reports they may have acted fraudulently.
+*line_break
+*line_break
+The reports are well founded.  Since the original failed mission, Quantum Alchemy has changed ownership a total of seven times and was most recently purchased by Ms Maya Das ten years ago for the meager sum of 5,000 UEC. She intended to use the existing assets as a holiday company, but due to international laws on the use of quantum teleportation for living material, she was required to apply for an assisted suicide operating license. Reading the requirements for such a license, it is doubtful this would ever have been granted.
+*line_break
+*line_break
+Now, hard as it is to accept that a holiday company with few employees and no prior experience in space exploration is capable of launching a sophisticated interstellar mission from nearly 100 light years away, we have no option but to do so. No matter how many experts we produce stating the unlikelihood, the sheer distances involved give Quantum Alchemy a monopoly over the hard evidence. We could request proof of purchase of the required quantity of fuel, but such receipts are easily fabricated.
+*line_break
+*line_break
+Where they might have slipped up, is with the supposed development of the Auruminator QA-2. With recent advances, it is true that interstellar vehicles can be developed in the claimed timeframe of one month, but normally in the context of experienced builders with existing resources for mass production. While Quantum Alchemy did purchase a disused airport on the Arctic Archipelago, video footage of the site’s surroundings during the month of November showed no signs of intensive production other than it being heavily guarded.
+*line_break
+*line_break
+This revelation, together with Quantum Alchemy’s failure to produce even so much as a picture of the QA-2 thus far, has led to widespread belief that the whole mission was an elaborate scam.
+*line_break
+*line_break
+Despite this, I would not advise filing formal allegations of fraudulent activity. By now, Ms Das will be financially equipped to produce very high quality fabricated evidence. Such a court case would likely last years, and there is a chance it may not end with a favorable result.
+*line_break
+*line_break
+What is far more likely to be successful, is the claim that through failing to provide evidence of the QA-2s existence thus far, Quantum Alchemy have failed to defend your interests as shareholders. You will have seen for yourself the poor performance of Quantum Alchemy stocks, and the extreme sell-off that occurred after the public announcement of the QA-2 was ridiculed by science and business journalists around the globe.
+*line_break
+*line_break
+I am therefore looking to recruit claimants for a class action lawsuit, seeking compensation for damages incurred through Quantum Alchemy’s negligence. The total compensation sought will be determined by the size of the lawsuit, but I would initially be seeking to the full value of investments made, plus 100% to cover interest and associated opportunity costs.
+*line_break
+*line_break
+You might have been invited to join similar class action lawsuits from some of our competitors, some of whom are promising to take a negligible fees from the total money awarded. I would urge you to join the class represented here at Zhao & Jackson. Due to the sheer numbers of affected investors, it is unforeseeable that all competing class action suits will proceed to trial. Only the largest case will be tested in court, and the outcome of all smaller cases will be judged accordingly.
+*line_break
+*line_break
+Your choice of class is essentially a vote. Which firm do you trust to prove your case in court?
+*line_break
+*line_break
+The case against Quantum Alchemy might seem clear cut, but here at Zhao & Jackson, we take no chances. We have fought similar cases against rogue space exploration companies before, and fully anticipate a strong, well-resourced defense. They will obfuscate with technical jargon and produce a wealth of plausible, doctored evidence. They will aim to fool the jury, and the outcome might well come down to questions of how skeptical, how educated, how financially comfortable the jury member’s are.
+*line_break
+*line_break
+Here at Zhao & Jackson, we invented the art of the jury tailored evidence. Back in the wild west days of open juries, our algorithms could predict/control the outcome in 100% of so-called ‘equivocal’ cases. Juror anonymization as standard set us back, but we did not give up. We have been training neural networks on public data-streams to predict who the members of a jury might be.
+*line_break
+*line_break
+This is obviously a gargantuan task, and as juries are never explicitly revealed our algorithms are denied the real feedback they need. However, we are now correctly predicting verdicts in 70% of equivocal cases.
+*line_break
+*line_break
+The sheer size of this case confers a great advantage upon us. As an estimated 4 billion members of the eligible public are either investors in Quantum Alchemy, or direct relations thereof, the pool from which we must predict is greatly reduced in size. Those numbers should improve the predictive power of our combined models to an impressive 95%.
+*line_break
+*line_break
+By choosing Zhao & Jackson, you can help turn that predictive power, into a controlling power. We will tailor our case to the whims of the jury and make sure they see your case as clearly cut as we see it.
+*line_break
+*line_break
+Should you wish to join our class, I have taken the liberty of enclosing a form for the details we require. Please complete and return for my attention at your soonest convenience.
+*line_break
+*line_break
+Yours sincerely
+*line_break
+*line_break
+Kim S Zhao
+*line_break
+Partner-In-Charge, Zhao & Jackson
+*page_break Open attachment
+Name: Ms Merriweather
+*line_break
+Total invested in Quantum Alchemy: ${invested}
+*choice
+	#I would like to appoint Zhao & Jackson as my legal representative to pursue, on a no-win-no-fee basis, compensation from Quantum Alchemy.
+		*finish
+	#Ignore
+		*goto_scene accountant
+	#Re-read message
+		*goto sixthemail

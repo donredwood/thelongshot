@@ -1,0 +1,71 @@
+﻿One month later...
+*page_break Incoming Message
+*label fifthemail
+*temp thissell 0
+From: Maya Das, CEO, Quantum Alchemy
+*line_break
+To: Ms Merriweather
+*line_break
+Sent: 1st December 2419, 11:59
+*line_break
+Subject: QA-2 Update
+*line_break
+Attached: Sell Order
+*line_break
+*line_break
+Dear Ms Merriweather
+*line_break
+*line_break
+It is with great pride that I write to you today. Development of Auruminator QA-2 has finished a full month ahead of schedule. As you have no doubt heard, our competitors did not take long to follow suit, but I am confident we are on track to extend our lead over them. That said, I hesitate to waste even another minute, so I am this moment authorizing the launch of QA-2. Were it a more conventional launch, I’d invite you to watch it triumphantly pierce the sky.  Of course, buried in the confines of our development headquarters, due to the extremely precarious nature of entangled qu-bits, even I will be denied the opportunity to watch all our hard work and investment disappear before my eyes. Rest assured, we are taking every conceivable precaution to protect the life-blood of your investment.
+*line_break
+*line_break
+Congratulations. You have chosen wisely. We are sure to win this race. I only hope that with advancing technology, we might live to share in the prosperity we bestow upon our descendants.
+*line_break
+*line_break
+Alternatively, should you wish to capitalize on your investment sooner, we do seek to regain a controlling interest in our company. We are offering to buy back shares at an attractive rate. If you are interested, please complete the attached sell order.
+*line_break
+*line_break
+Yours forever
+*line_break
+*line_break
+Maya Das
+*line_break
+CEO, Quantum Alchemy
+*page_break Open attachment
+*label sellstart
+You have: ${shares} shares.
+*line_break
+You have: ${savings} UEC.
+*line_break
+*if shares = 0
+	You have no more shares to sell.
+	*set maxshares 0
+	*finish
+Price per share: 120 Universal Earth Credits
+*line_break
+*choice
+	#Sell 1 share
+		*set thissell + 1
+		*set shares - 1
+		*set savings + 120
+		*goto sellstart
+	*IF shares>4
+		#Sell 5 shares
+			*set thissell + 1
+			*set shares - 5
+			*set savings + 600
+			*goto sellstart
+	#Sell all shares
+		*set savings+(120*shares)
+		*set shares 0
+		*set maxshares 0
+		*finish
+	*If thissell = 0
+		#I do not want to sell at this time
+			*finish
+	*If thissell > 0
+		#I do not want to sell anymore shares at this time
+			*finish
+	#Re-read message
+		*goto fifthemail
+

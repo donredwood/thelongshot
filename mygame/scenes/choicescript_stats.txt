@@ -1,0 +1,3 @@
+*stat_chart
+	text shares Quantum Alchemy Shares
+	text savings Universal Earth Credits

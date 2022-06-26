@@ -1,0 +1,64 @@
+﻿One week later...
+*page_break Incoming Message
+*label seventhemail
+*temp thissell 0
+From: Kim S Zhao, Partner-In-Charge, Zhao & Jackson
+*line_break
+To: Ms Merriweather
+*line_break
+Sent: 30th January 2420 08:00
+*line_break
+Subject: Welcome!
+*line_break
+Attached: Sell Order
+*line_break
+*line_break
+Dear Ms Merriweather
+*line_break
+*line_break
+I want to thank you for placing your faith in Zhao & Jackson. We are overwhelmed by the response we have received. It is only been a week, but already it seems certain that  we shall have the largest of the competing lawsuits. I would consider all investors in Quantum Alchemy indebted to you for the good choice you have made.
+*line_break
+*line_break
+When suing a company, it is standard practice to sell any shares you hold in it – lest you become responsible for the debts you wish to inflict on them. If you were not lucky enough to sell off your shares before their value collapsed, please complete the attached Sell Order to free yourself of all such liabilities.
+*line_break
+*line_break
+Yours sincerely
+*line_break
+*line_break
+Kim S Zhao
+*line_break
+Partner-In-Charge, Zhao & Jackson
+*page_break Open attachment
+*label sellstart
+You have: ${shares} shares.
+You have: ${savings} UEC.
+*line_break
+Price per share: 2 Universal Earth Credits
+*line_break
+*if shares = 0
+	You do not have anymore shares to sell at this time.
+	*set condition 2
+	*finish
+*choice
+	#Sell 1 share
+		*set shares - 1
+		*set savings + 2
+		*goto sellstart
+	*If shares>4
+		#Sell 5 shares
+			*set shares - 5
+			*set savings + 10
+			*goto sellstart
+	#Sell all shares
+		*set savings+(2*shares)
+		*set shares 0
+		*set condition 2
+		*finish
+	*IF thissell = 0
+		#I do not want to sell shares at this time.
+			*finish
+	*IF thissell > 0
+		#I do not want to sell further shares at this time.
+			*finish
+	#Re-read message
+		*goto seventhemail

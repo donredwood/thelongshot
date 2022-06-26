@@ -1,0 +1,47 @@
+﻿*title The Long Shot
+*author Don Redwood
+*scene_list
+	startup
+	ipo
+	nda
+	vote
+	dso
+	buyback
+	offer
+	cal
+	nom
+	apol
+	gupta
+	accountant
+
+*create savings 2500
+*create shares 0
+*create condition 4
+*create invested 0
+*create maxshares 0
+*create maxinvested 0
+
+Three centuries from now...
+*page_break Incoming Message
+From: Harris Ousmane, Chartered Accountant
+*line_break
+To: Ms Merriweather
+*line_break
+Sent: 25th June 2417, 09:00
+*line_break
+Subject: Your estate
+*line_break
+*line_break
+Dear Ms Merriweather
+*line_break
+*line_break
+It being your 30th birthday, I have the pleasure of activating your inheritance. After tax, this stands at ${savings} Universal Earth Credits. This makes you relatively wealthy young woman. It goes unsaid, this is not to be spent lightly. 
+*line_break
+*line_break
+Yours sincerely
+*line_break
+*line_break
+Harris Ousmane
+*line_break
+Chartered Accountant
+*finish Close message

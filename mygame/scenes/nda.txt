@@ -1,0 +1,45 @@
+One week later...
+*page_break Incoming message
+*label secondemail
+From: Maya Das, CEO, Quantum Alchemy
+*line_break
+To: Ms Merriweather
+*line_break
+Sent: 29th October 2419, 09:00
+*line_break
+Subject: Quantum Alchemy: Update for Stakeholders
+*line_break
+Attached: Non Disclosure Agreement
+*line_break
+*line_break
+Dear Ms Merriweather
+*line_break
+*line_break
+I have been meaning to write to you to personally thank you for placing your trust in Quantum Alchemy. As you will be aware, mission launch was successful. We have factored into our calculations the use of a negligible number of qubits to allow Earth-side monitoring of mission progress.
+*line_break
+*line_break
+So far, events are proceeding precisely as we anticipated. The closest of those rivals with whom we shared orbit will still be preparing for launch. We remain in pole position in the race towards the merged neutron star.
+*line_break
+*line_break
+Our position is enviable, yet I seek to further entrench our advantage. Our technical team has been working round the clock, and have come up with a significant improvement to our strategy. This can only be enacted with the approval of 50% of our shareholders.
+*line_break
+*line_break
+It pains me not to be able to mirror the trust you have placed in Quantum Alchemy, but due to the potential value of the proposed strategy, our lawyers have insisted in formal Non-Disclosure Arrangements. If you are interested in learning more, please sign the attached contract.
+*line_break
+*line_break
+Yours forever
+*line_break
+*line_break
+Maya Das
+*line_break
+CEO, Quantum Alchemy
+*page_break Open attachment
+I, Ms Merriweather, the investor, agree not to disclose information disclosed to me by Quantum Alchemy, the disclosing party, when that information has been deemed to be of a sensitive nature, as signified by the attachment of a CONFIDENTIAL tag.
+*choice
+	#Sign
+		*finish
+	#Do Not Sign
+		*set condition 1
+		*goto_scene accountant
+	#Re-read message
+		*goto secondemail

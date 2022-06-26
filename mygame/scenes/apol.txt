@@ -1,0 +1,42 @@
+﻿One month later...
+*page_break Incoming Message
+*label eighthemail
+From: Kim S Zhao, Partner-In-Charge, Zhao & Jackson
+*line_break
+To: Ms Merriweather
+*line_break
+Sent: 30th February 2420, 09:00
+*line_break
+Subject: An apology
+*line_break
+*line_break
+Dear Ms Merriweather
+*line_break
+*line_break
+I send these words with the heaviest of hearts. We at Zhao & Jackson have been working round the clock in preparation for your case. We have even turned down cases from longstanding clients so as not to interrupt our focus on the case.
+*line_break
+*line_break
+However, it would appear that our hard work and sacrifice has been in vain. Although our class is indeed the largest, Zhao & Jackson have been deemed unsuitable for this very reason.
+*line_break
+*line_break
+More precisely, the problem relates to a quirk of accounting. In acting as broker for your bad stocks, we encountered difficulties in finding buyers – obviously as a result of the strength of the case we were building against Quantum Alchemy. To provide some liquidity, we took ownership of the stocks ourselves – standard practice when dealing with difficult to shift stock.
+*line_break
+*line_break
+While this ownership was meant to be temporary, we do currently have a controlling interest in Quantum Alchemy, and the Court are interpreting this as a conflict that significantly undermines our ability to represent the original investors. It would normally suffice to ask you to consent to waive the conflict, but as we would be representing all classes – not just those who placed their faith in our firm – it is unlikely we could obtain that consent.
+*line_break
+*line_break
+The Court have appointed Gupta & Gupta as the representatives of the competing class actions. They are a small firm, and while their class was one of the smaller competing lawsuits, they the only firm who could declare themselves free of any conflict of interest. I happen to know them personally, so I can testify to their hardworking, honest nature. I am confident they will give your case the attention it needs.
+*line_break
+*line_break
+It will come as no surprise to you, that as majority shareholders of Quantum Alchemy, we will be appointing ourselves as our legal representatives.
+*line_break
+*line_break
+We will see you in court.
+*line_break
+*line_break
+Kim S Zhao
+*line_break
+Partner-In-Charge, Zhao & Jackson
+*line_break
+President, Quantum Alchemy
+*finish Close message

@@ -1,0 +1,60 @@
+﻿The next day...
+*page_break Incoming Message
+*label thirdemail
+From: Maya Das, CEO, Quantum Alchemy
+*line_break
+To: Ms Merriweather
+*line_break
+Sent: 30th October 2419, 09:00
+*line_break
+Subject: CONFIDENTIAL: Proposal for new strategy
+*line_break
+Attached: Voting Slip
+*line_break
+*line_break
+Dear Ms Merriweather
+*line_break
+*line_break
+My sincerest apologies for inflicting that formality upon you. However, once you have processed the revolutionary nature of our technical team's proposal, I'm sure you will understand our lawyers' insistence.
+*line_break
+*line_break
+As you were already aware, space-faring technology has advanced significantly since the launch of the original Milky Way Merge mission over 300 years ago. Today's ships can reach speeds approaching two thirds of light speed.  Fast – just not fast enough to make up for the head-start the Auruminator QA has.
+*line_break
+*line_break
+But what if we had the head-start and the speed? This is the bold question our technical team have sought – and succeeded – to solve.
+*line_break
+*line_break
+They are proposing the development of a new ship. Capable of reaching the speed of today’s standards, fully equipped for merged neutron star exploration, yet compact enough to be transferred to its forebearer using only half of our remaining qubit capacity.
+*line_break
+*line_break
+After collecting its predecessor’s remaining fuel and qubits, the hypothesized Auruminator QA-2 would then detach, and head towards the merger with greater acceleration, and ultimately, greater speed.
+*line_break
+*line_break
+Enough technicalities. You will want to know what this means for you.
+*line_break
+*line_break
+Essentially, it means advancing the return on your investment by at least 50 years. Consideration must be given to the further depleted qubits left for transportation of heavy metals, but as the market performance of our stock has shown – when it comes to neutron star exploration, its not size that matters, but speed.
+*line_break
+*line_break
+Please find your voting slip attached and return by midnight tonight. If a majority votes in favor, we will float a secondary offering of stock to raise the necessary capital – a further 2,000,000 UEC. With this sum, our engineers are confident they can ready the QA-2 within two months.
+*line_break
+*line_break
+I needn’t remind you to take every precaution possible to keep this development safe from prying eyes. It is a matter of time before our competitors develop a similar plan. We are miles ahead of them. We hope to keep it that way.
+*line_break
+*line_break
+Yours forever
+*line_break
+*line_break
+Maya Das
+*line_break
+CEO, Quantum Alchemy
+*page_break Open attachment
+Are you in favor of the proposed development of Auruminator QA-2?
+*choice
+	#Yes
+		*finish
+	#No
+		*set condition 1
+		*goto_scene accountant
+	#Re-read message
+		*goto thirdemail

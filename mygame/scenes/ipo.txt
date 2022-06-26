@@ -1,0 +1,93 @@
+Two years later...
+*page_break Incoming Message
+*label firstEmail
+From: Maya Das, CEO, Quantum Alchemy
+*line_break
+To: Ms Merriweather
+*line_break
+Sent: 22nd October 2419, 08:17
+*line_break
+Subject: Limited Public Offering: Quantum Alchemy
+*line_break
+Attached: Stock Order
+*line_break
+*line_break
+Dear Ms Merriweather
+*line_break
+*line_break
+As a descendant of a prior investor in Quantum Alchemy, it is only right that you are first to hear this breaking news, and be offered first refusal of the inherent opportunity.
+*line_break
+*line_break
+The light twinkling in the Southern Hemisphere since 0514 this morning has been associated with near simultaneous bursts of both gravitational wave and gamma ray activity. We can confirm this does indeed represent the merging of two neutron stars - the second ever to be observed within our own galaxy.
+*line_break
+*line_break
+I am inviting you to help us capitalize on this opportunity. I appreciate that given the significant losses Ms Merriweather Sr incurred supporting our exploration of the original Milky Way Merge, this might seem a bold invitation. You might be considering investing in one of our many competitors. I believe however, that if you process the information outlined in this communication, you will realize your money really is safest with Quantum Alchemy.
+*line_break
+*line_break
+We use industry leading AI to guide our decisions about merged neutron star exploration, using all available observations to predict the mass of the merged remnant, and therefore, its suitability for heavy metal mining. Our AI was not alone in thinking the remnant mass of the original Milky Way Merge would fall within the Tolman-Oppenheimer-Volkoff limit. Indeed, due to the relatively limited training data available at that time, the predictive capabilities of all companies in the field were essentially identical. Those competitors now claiming to have avoided losses on the original Milky Way Merge through possession of more cautious, rigorous algorithms, simply lacked financial or scientific capability to launch an expedition at that time.
+*line_break
+*line_break
+Those that did incur losses, such as ourselves, are now in an enviable position. While close observation of a black hole class neutron star merger remnant was never the purpose of our original venture, we did not neglect to take advantage of this opportunity. Thanks to these observations made possible by benefactors such as your ancestors, our discriminative model is infinitely more powerful. I give you my personal guarantee, calculated to within 0.000000000001% of absolute certainty, that the remnant mass of this merger will fall within the Tolman-Oppenheimer-Volkoff limit, and thus be a new neutron star, laden with gold and suitable for exploration.
+*line_break
+*line_break
+And the advantage bestowed on us by Ms Merriweather Sr does not end with this increased predictive confidence. While today's event is 178 light years from Earth, it lies on a vector only 29 degrees from that of the original Milky Way Merge. As a result, we have our ship, Auruminator QA, still in possession of the vast majority of its entangled qubits, in orbit a mere 103 light years from the target. We can reach the new remnant within 200 years - decades before even the faster ships being produced today could manage the journey from Earth.
+*line_break
+*line_break
+As we are looking to regain your family's trust, it is important we are fully transparent about the sole complication. A considerable fraction of our ship's qubits will be needed to receive fuel for the journey. We have been exceptionally lucky, in that the trajectory of Auruminator QA will become optimal for launch at 1500 today, at which point we will require to use 60% of its qubits for fuel receipt. From then, fuel requirements will increase in a non-linear fashion until 1700 today, when launch will become non-viable.
+*line_break
+*line_break
+The next launch window would open three months from now. By that time, the three competitors sharing our orbit of the black hole remnant of the original Milky Way Merge will have had opportunity to launch their own expeditions. Therefore, to guarantee our investors the best possible returns, we need to launch at 1500 today. This will maximize the qubits left for transfer of heavy elements, and we will have been harvesting for a full month before our closest rival arrives in their best case scenario.
+*line_break
+*line_break
+I understand some of our competitors, particularly those still stationed within our solar system, are advertising significantly larger entangled qubit capacities. Bear in mind that by the time those additional qubits are needed, the value of heavy elements will have depreciated significantly as the market becomes saturated. In offering you the fastest return, Quantum Alchemy is offering you the most valuable return.
+*line_break
+*line_break
+The amount to be raised is 1,000,000 UEC. As all technology is already built, owned and programmed, this is considerably less than many of our competitors. We only seek to fund the acquisition of the fuel to be transferred, and skeleton running costs of Quantum Alchemy for the next 200 years. A descendant myself, I will be funding and retaining 0.01% of the company myself. The rest is for the taking.
+*line_break
+*line_break
+Please find your exclusive Stock Order form attached. We will be accepting offers from legacy families exclusively until 1300. In the unlikely instance there remains a deficit by then, we will open to the general public, at which point we are certain to meet our target within seconds - leaving enough time to transfer and prepare fuel for mission launch at 1500.
+*line_break
+*line_break
+Providence has given Quantum Alchemy the good fortune to deliver what should rightfully have been your inheritance. An age of plenty beckons, and thanks to Ms Merriweather Sr, you and your descendants can join me at its forefront. I hope to hear from you soon.
+*line_break
+*line_break
+Yours forever
+*line_break
+*line_break
+Maya Das
+*line_break
+CEO, Quantum Alchemy
+*page_break Open attachment
+*label reorder
+You have ${savings} Universal Earth Credits
+*If shares>0
+	*line_break
+	You have ${shares} shares in Quantum Alchemy
+*If shares>9
+	*line_break
+	You can buy no more shares at this time
+	*finish Continue
+*line_break
+Cost per share: 100UEC
+*choice
+	#I would like to buy 1 shares at a cost of 100 UEC per share for a total of 100 UEC.
+		*set shares + 1
+		*set invested + 100
+		*set savings - 100
+		*goto reorder
+	*If shares<6
+		#I would like to buy 5 shares at a cost of 100 UEC per share for a total of 500 UEC.
+			*set shares + 5
+			*set invested + 500
+			*set savings - 500
+			*goto reorder
+	*If shares=0
+		#I do not want to buy any shares
+			*set shares 0
+			*set condition 0
+			*goto_scene accountant
+	*If shares>0
+		#I do not want to buy any more shares
+			*finish continue
+	#Re-read message
+		*goto firstEmail

@@ -1,0 +1,138 @@
+﻿A few weeks later...
+*page_break Incoming Message
+*temp shareprice 50
+*temp thisord 0
+*label buyselloffer
+From: Harris Ousmane, Chartered Accountant
+*line_break
+To: Ms Merriweather
+*line_break
+Sent: 15th December 2419, 11:59
+*line_break
+Subject: URGENT Stock Alert 
+*line_break
+*line_break
+Attached: Stock order
+*line_break
+*line_break
+Dear Ms Merriweather
+*line_break
+*line_break
+I wanted to make sure you were aware of recent developments re: Quantum Alchemy. Their claim to have teleported an interstellar ship across the galaxy is being roundly ridiculed, and their share value is plummeting accordingly. 
+*If shares > 0
+	I suspect it may be time to cut your losses with this venture.
+*line_break
+*line_break
+Of course, I am not a financial advisor, and this is not financial advice, but I thought it worth bringing to your attention.
+*line_break
+*line_break
+Yours sincerely
+*line_break
+*line_break
+Harris Ousmane
+*line_break
+Chartered Accountant
+*page_break Open attachment
+*label buysellstart
+You have: ${shares} shares.
+*line_break
+You have: ${savings} UEC.
+*line_break
+Current price per share: ${shareprice} Universal Earth Credits
+*line_break
+*choice
+	*IF shares>0
+		#Sell 1 share
+			*set thisord 1
+			*set shares - 1
+			*set savings + shareprice
+			*set shareprice round(shareprice/2)+1
+			*goto buysellstart
+	*IF shares>4
+		#Sell 5 shares
+			*set thisord 1
+			*set shares - 5
+			*set savings + (shareprice*5)
+			*set shareprice round(shareprice/2)+1
+			*goto buysellstart
+	*IF shares>49
+		#Sell 50 shares
+			*set thisord 1
+			*set shares - 50
+			*set savings + (shareprice*50)
+			*set shareprice round(shareprice/2)+1
+			*goto buysellstart
+	*IF shares>499
+		#Sell 500 shares
+			*set thisord 1
+			*set shares - 500
+			*set savings + (shareprice*500)
+			*set shareprice round(shareprice/2)+1
+			*goto buysellstart
+	*IF shares>4999
+		#Sell 5000 shares
+			*set thisord 1
+			*set shares - 5000
+			*set savings + (shareprice*5000)
+			*set shareprice round(shareprice/2)+1
+			*goto buysellstart
+	*IF shares>0
+		#Sell all shares
+			*set thisord 1
+			*set savings+(shareprice*shares)
+			*set shares 0
+			*set shareprice round(shareprice/2)+1
+			*goto buysellstart
+	*IF savings>=shareprice
+		#Buy 1 share
+			*set shares + 1
+			*set thisord 1
+			*set savings - shareprice
+			*set shareprice round(shareprice/2)+1
+			*goto buysellstart
+	*IF savings>=(shareprice*5)
+		#Buy 5 shares
+			*set shares + 5
+			*set thisord 1
+			*set savings - (shareprice*5)
+			*set shareprice round(shareprice/2)+1
+			*goto buysellstart
+	*IF savings>=(shareprice*50)
+		#Buy 50 shares
+			*set shares + 50
+			*set thisord 1
+			*set savings - (shareprice*50)
+			*set shareprice round(shareprice/2)+1
+			*goto buysellstart
+	*IF savings>=(shareprice*500)
+		#Buy 500 shares
+			*set shares + 500
+			*set thisord 1
+			*set savings - (shareprice*500)
+			*set shareprice round(shareprice/2)+1
+			*goto buysellstart
+	*IF savings>=(shareprice*5000)
+		#Buy 5000 shares
+			*set shares + 5000
+			*set thisord 1
+			*set savings - (shareprice*5000)
+			*set shareprice round(shareprice/2)+1
+			*goto buysellstart
+	#Wait a minute
+		*set shareprice round(shareprice/2)+1
+		*goto buysellstart
+	*If thisord = 0
+		#I do not want to buy or sell at this time
+			*If shares = 0
+				*set condition 2
+				*goto_scene accountant
+			*finish
+	*If thisord > 0
+		#I do not want to buy or sell anymore shares at this time
+			*If shares = 0
+				*set condition 2
+				*goto_scene accountant
+			*finish
+	#Re-read message
+		*goto buyselloffer
+

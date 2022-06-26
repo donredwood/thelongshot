@@ -1,0 +1,83 @@
+﻿Nearly 8 decades later...
+*page_break Incoming Message
+*temp net 0
+*set net shares*1978124414
+*If (condition = 2) and (savings > 2000)
+	*set condition 3
+*IF (condition = 4) and (shares > 1000)
+	*set condition 5
+*IF (condition = 5) and (shares >1900)
+	*set condition 6
+*IF condition = 6
+	*set net shares*1978124414
+	From: Harris Ousmane, Chartered Accountant
+	*line_break
+	To: Ms Merriweather
+	*line_break
+	Sent: 25th June 2497, 09:00
+	*line_break
+	Subject: Your estate
+	*line_break
+	*line_break
+	Dear Ms Merriweather, Master of the Known Universe
+	*line_break
+	*line_break
+	My death date is fast approaching. I will not chance my luck by asking you to extend it further. It has been an honour to serve under you, and watch your journey from a plucky young investor to the most powerful human being ever to grace the stars. I know this but the beginning of your journey. How I wish I could see it in it's full.
+	*line_break
+	*line_break
+	I attach a summary of your estate, for you to pass on to whatever lucky soul replaces me.
+	*line_break
+	*line_break
+	Yours faithfully
+	*line_break
+	*line_break
+	Harris Ousmane, Chartered Accountant
+*If condition<6
+	From: Skye Ousmane, Chartered Accountant
+	*line_break
+	To: Ms Merriweather
+	*line_break
+	Sent: 25th June 2497, 09:00
+	*line_break
+	Subject: Your estate
+	*line_break
+	*line_break
+	Dear Ms Merriweather
+	*line_break
+	*line_break
+	Your death date is fast approaching. This is a special time, for looking back at the life you have lived, and looking forward to whatever lies beyond. There are of course, as ever, affairs to be attended to. Foremost among them is your last will and testament. To aid you in this, please find enclosed a summary of your estate.
+	*line_break
+	*line_break
+*IF condition =0
+	*set net 0
+	Unfortunately, due to the unprecedented collapse of gold-standard currencies, your savings of Universal Earth Credits are negligible in value.
+*IF condition = 1
+	*set net shares*1978124414
+	As you will see, your investment in Quantum Alchemy has resulted in exceptional returns against the Universal Earth Credit which, being gold-standard, has collapsed in value. Unfortunately, due to the relatively poor performance of Quantum Alchemy stock, your net worth does remain somewhat negligible.
+*IF condition = 2
+	*set net 0
+	Unfortunately, it would appear that you sold off your Quantum Alchemy stock before it rocketed in value. You have very little cash reserves, but given the recent collapse of gold standard currency, this is of small consequence.
+*IF condition = 3
+	*set net 0
+	Unfortunately, it would appear that you sold off your Quantum Alchemy stock before it rocketed in value. You have significant cash reserves, but given the recent collapse of gold standard currency, this is of small consequence.
+*IF condition = 4
+	*set net shares*1978124414
+	You have done well to hold on to your Quantum Alchemy stock. They are among the best performing shares in the neutron star exploration market. It is a shame you did not have more. Regardless, you have a large estate to divide among those you leave behind."
+*IF condition = 5
+	*set net shares*100000000
+	As you will see, you are among the richest of this planet. Your will shall affect history itself.
+*IF condition<6
+	*line_break
+	*line_break
+	Yours sincerely
+	*line_break
+	*line_break
+	Skye Ousmane, Chartered Accountant
+	*line_break
+	*line_break
+You have:
+*line_break
+Cash savings: ${savings} UEC
+*line_break
+Stocks and shares: ${shares} in Quantum Alchemy, currently worth ${net} UEC
+*ending
