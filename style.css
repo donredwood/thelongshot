@@ -5,7 +5,7 @@ body {
  _width:expression(this.scrollWidth > 680 ? "680px" : "auto");
  font-size: 100%;  /* reset for CWS */
  font: -apple-system-body; /* we'll override the font, but keep the size from iOS dynamic text sizing */
- font-family: "Deja Vu Sans Mono",Courier,serif;
+ font-family: Georgia,"Times New Roman",serif;
  background-color: #000000;
  color: #FAC800;
  margin: 8px auto;
@@ -280,7 +280,6 @@ input[type=email],input[type=password] {
 }
 
 h1 {
-  font: courier;
   font-size: 1.5em;
   font-weight: normal;
 }
