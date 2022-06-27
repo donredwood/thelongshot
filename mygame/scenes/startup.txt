@@ -1,4 +1,4 @@
-﻿*title The Long Shot
+﻿*title The\nLong\nShot
 *author Don Redwood
 *scene_list
 	startup
