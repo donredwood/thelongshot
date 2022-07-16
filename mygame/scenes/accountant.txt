@@ -80,4 +80,9 @@ You have:
 Cash savings: ${savings} UEC
 *line_break
 Stocks and shares: ${shares} in Quantum Alchemy, currently worth ${net} UEC
+*line_break
+*line_break
+Thanks for playing!
+*line_break
+*link http://www.donredwood.com/ Don Redwood
 *ending
